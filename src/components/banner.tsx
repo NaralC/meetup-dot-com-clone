@@ -11,6 +11,7 @@ import {
   Icon,
   Image,
   Input,
+  Show,
 } from "@chakra-ui/react";
 import illustration from "../assets/illustration.svg";
 import reactLogo from "../assets/react.svg";
@@ -192,7 +193,7 @@ const Banner: React.FC = () => {
                       w="100%"
                     ></Input>
                     <Box pos={"absolute"} top={"3"} right={"2"}>
-                      <SearchIcon mb={"3"} />
+                      <SearchIcon mb={"3"} hideBelow={"md"} />
                     </Box>
                   </Box>
                 </FormControl>
@@ -206,13 +207,14 @@ const Banner: React.FC = () => {
                       w="100%"
                     ></Input>
                     <Box pos={"absolute"} top={"3"} right={"2"}>
-                      <SearchIcon mb={"3"} />
+                      <SearchIcon mb={"3"} hideBelow={"md"} />
                     </Box>
                   </Box>
                 </FormControl>
               </Box>
             </Flex>
             <Button
+              _active={{ transform: "scale(0.95)",  }}
               _hover={{ opacity: "80%" }}
               mt={"5"}
               px={"6"}
@@ -221,7 +223,7 @@ const Banner: React.FC = () => {
               bg={"red.500"}
               fontSize={"lg"}
             >
-              <Box fontWeight={"black"}>Search</Box>
+              <Box fontWeight={"bold"}>Search</Box>
             </Button>
           </Box>
 
