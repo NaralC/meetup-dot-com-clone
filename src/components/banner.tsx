@@ -28,6 +28,7 @@ const Banner: React.FC = () => {
         <Box
           display={"flex"}
           alignItems={"center"}
+          px={3}
           justifyContent={"space-between"}
           // backgroundColor={"red"}
           width="100%"
@@ -36,10 +37,20 @@ const Banner: React.FC = () => {
             <Image src={reactLogo} />
           </Center>
           <Box display={"flex"} gap={2} pr={5}>
-            <Button variant="link" color={"black"} colorScheme="blue">
+            <Button
+              variant="outline"
+              color={"black"}
+              boxShadow={"md"}
+              _active={{ transform: "scale(0.95)" }}
+            >
               Log In
             </Button>
-            <Button variant="link" color={"black"} colorScheme="blue">
+            <Button
+              variant="outline"
+              color={"black"}
+              boxShadow={"md"}
+              _active={{ transform: "scale(0.95)" }}
+            >
               Sign Up
             </Button>
           </Box>
@@ -214,7 +225,7 @@ const Banner: React.FC = () => {
               </Box>
             </Flex>
             <Button
-              _active={{ transform: "scale(0.95)",  }}
+              _active={{ transform: "scale(0.95)" }}
               _hover={{ opacity: "80%" }}
               mt={"5"}
               px={"6"}
