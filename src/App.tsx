@@ -1,5 +1,6 @@
 import Banner from './components/banner'
 import ItWorks from './components/it-works'
+import UpcomingOnlineEvents from './components/upcoming-online-events'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Banner />
       <ItWorks />
+      <UpcomingOnlineEvents />
     </>
   )
 }
