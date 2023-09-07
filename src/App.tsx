@@ -6,6 +6,7 @@ import UpcomingOnlineEvents from "./components/upcoming-online-events";
 import StayConnected from "./components/stay-connected";
 import Stories from "./components/stories";
 import imageBg from "./assets/bg.svg";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Popular />
       <StayConnected />
       <Stories />
+      <Footer />
 
       <Box position="absolute" inset={"0"} height="100vh" zIndex={-1}>
         <Image w="80%" mx="auto" objectFit="cover" sizes="300" src={imageBg} />
