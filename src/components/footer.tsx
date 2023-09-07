@@ -17,7 +17,12 @@ function Footer() {
       <Container maxWidth="container.xl">
         <Box display="flex" alignItems="center">
           <Heading size="md">Create your own Meetup group.</Heading>
-          <Button ml="4" colorScheme="white" variant="outline">
+          <Button
+            ml="4"
+            colorScheme="white"
+            variant="outline"
+            _active={{ transform: "scale(0.95)" }}
+          >
             Get Started
           </Button>
         </Box>

@@ -35,6 +35,10 @@ const UpcomingOnlineEvents: React.FC = () => {
             base: "repeat(3, 1fr)",
             lg: "repeat(5, 1fr)",
           }}
+          flexWrap={{
+            base: "nowrap",
+            lg: "wrap"
+          }}
           gap={"12"}
         >
           {Array(10)
